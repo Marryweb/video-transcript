@@ -8,6 +8,7 @@ import subprocess
 from pathlib import Path
 from openai import OpenAI
 from typing import List, Dict, Any
+import pytesseract
 
 class VideoProcessor:
     def __init__(self, openai_api_key: str):
@@ -68,7 +69,7 @@ class VideoProcessor:
             cmd = [
                 'ffmpeg', '-i', video_path,
                 '-vn', '-acodec', 'pcm_s16le',
-                '-ar', '16000', '-ac', '1',
+                '-ar', '44100', '-ac', '2',
                 '-y', audio_path
             ]
             subprocess.run(cmd, capture_output=True, check=True)
@@ -77,7 +78,8 @@ class VideoProcessor:
                 transcript = self.client.audio.transcriptions.create(
                     model="whisper-1",
                     file=audio_file,
-                    response_format="verbose_json"
+                    response_format="verbose_json",
+                    language="en"
                 )
             
             segments = []
@@ -103,6 +105,26 @@ class VideoProcessor:
         finally:
             if os.path.exists(audio_path):
                 os.unlink(audio_path)
+    
+    def extract_text_from_frames(self, frames: List[Dict]) -> List[Dict]:
+        """Extract text from frames using OCR"""
+        text_segments = []
+        for frame in frames:
+            try:
+                image = cv2.imread(frame["filepath"])
+                if image is None:
+                    continue
+                text = pytesseract.image_to_string(image, config='--psm 6').strip()
+                if text and len(text) > 3:
+                    text_segments.append({
+                        "start_time": frame["timestamp"],
+                        "end_time": frame["timestamp"] + 1.0,
+                        "text": text,
+                        "confidence": 0.8
+                    })
+            except:
+                continue
+        return text_segments
     
     def match_frames_with_transcript(self, frames: List[Dict], transcript: List[Dict]) -> List[Dict]:
         print("🔗 Matching frames with transcript...")
@@ -159,6 +181,13 @@ class VideoProcessor:
         
         frames = self.extract_frames(video_path)
         transcript = self.transcribe_video(video_path)
+        
+        # If audio transcription is poor, try OCR
+        if len(transcript) <= 1:
+            print("⚠️  Audio transcription seems poor, trying OCR...")
+            ocr_text = self.extract_text_from_frames(frames)
+            transcript.extend(ocr_text)
+        
         matched = self.match_frames_with_transcript(frames, transcript)
         self.save_results(video_name, frames, transcript, matched)
         
