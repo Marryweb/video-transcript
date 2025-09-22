@@ -1,0 +1,86 @@
+[
+  {
+    "start_time": 0.0,
+    "end_time": 10.0,
+    "text": " Thanks for watching!",
+    "confidence": -0.9664519429206848,
+    "source": "voice"
+  },
+  {
+    "start_time": 0.0,
+    "end_time": 1.0,
+    "text": "Bu eae cosom\n:",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 1.0,
+    "end_time": 2.0,
+    "text": "Purchase Price: $259,259\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 2.0,
+    "end_time": 3.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,241\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 3.0,
+    "end_time": 4.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 4.0,
+    "end_time": 5.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nSee what you could qualify for\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 5.0,
+    "end_time": 6.0,
+    "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down. =\n\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender bes ME",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 6.0,
+    "end_time": 7.0,
+    "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender\nEAL!",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 7.0,
+    "end_time": 8.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender\nIA A",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 8.0,
+    "end_time": 9.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender\n\nAIP iA\n\n\u2018 |=\nay | gen \u201ca \u2018of",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 9.0,
+    "end_time": 10.0,
+    "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender\nMn",
+    "confidence": 0.8,
+    "source": "ocr"
+  },
+  {
+    "start_time": 10.0,
+    "end_time": 11.0,
+    "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender\n(RENN AA A\n,*\n>< | cee. :",
+    "confidence": 0.8,
+    "source": "ocr"
+  }
+]

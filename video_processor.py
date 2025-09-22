@@ -89,14 +89,16 @@ class VideoProcessor:
                         "start_time": segment.start,
                         "end_time": segment.end,
                         "text": segment.text,
-                        "confidence": getattr(segment, 'avg_logprob', 0)
+                        "confidence": getattr(segment, 'avg_logprob', 0),
+                        "source": "voice"
                     })
             else:
                 segments.append({
                     "start_time": 0.0,
                     "end_time": 10.0,
                     "text": transcript.text,
-                    "confidence": 0.0
+                    "confidence": 0.0,
+                    "source": "voice"
                 })
             
             print(f"✅ Transcribed {len(segments)} segments")
@@ -120,7 +122,8 @@ class VideoProcessor:
                         "start_time": frame["timestamp"],
                         "end_time": frame["timestamp"] + 1.0,
                         "text": text,
-                        "confidence": 0.8
+                        "confidence": 0.8,
+                        "source": "ocr"
                     })
             except:
                 continue
@@ -133,13 +136,25 @@ class VideoProcessor:
         for frame in frames:
             frame_time = frame["timestamp"]
             
-            matching_segment = None
-            for segment in transcript:
-                if segment["start_time"] <= frame_time <= segment["end_time"]:
-                    matching_segment = segment
-                    break
+            # Find all segments that contain this frame time
+            containing_segments = [s for s in transcript if s["start_time"] <= frame_time <= s["end_time"]]
             
-            if not matching_segment:
+            if containing_segments:
+                matching_segment = min(containing_segments, 
+                                     key=lambda s: s["end_time"] - s["start_time"])
+                
+                ocr_segments = [s for s in containing_segments if s.get("source") == "ocr"]
+                voice_segments = [s for s in containing_segments if s.get("source") == "voice"]
+                
+                if ocr_segments and voice_segments:
+                    # Pick the best voice or OCR based on specificity
+                    best_ocr = min(ocr_segments, key=lambda s: s["end_time"] - s["start_time"])
+                    best_voice = min(voice_segments, key=lambda s: s["end_time"] - s["start_time"])
+                    
+                    if (best_ocr["end_time"] - best_ocr["start_time"]) < (best_voice["end_time"] - best_voice["start_time"]):
+                        matching_segment = best_ocr
+            else:
+                # Find closest segment
                 closest_segment = min(transcript, 
                                     key=lambda s: min(abs(s["start_time"] - frame_time), 
                                                     abs(s["end_time"] - frame_time)))
@@ -148,7 +163,7 @@ class VideoProcessor:
             matched.append({
                 "frame": frame,
                 "transcript": matching_segment,
-                "match_confidence": 1.0 if matching_segment else 0.0
+                "match_confidence": 1.0 if containing_segments else 0.5
             })
         
         print(f"✅ Matched {len(matched)} frames")
@@ -180,13 +195,16 @@ class VideoProcessor:
         video_name = Path(video_path).stem
         
         frames = self.extract_frames(video_path)
-        transcript = self.transcribe_video(video_path)
         
-        # If audio transcription is poor, try OCR
-        if len(transcript) <= 1:
-            print("⚠️  Audio transcription seems poor, trying OCR...")
-            ocr_text = self.extract_text_from_frames(frames)
-            transcript.extend(ocr_text)
+        # Audio transcription first (primary method)
+        voice_transcript = self.transcribe_video(video_path)
+        transcript = voice_transcript
+        
+        # Only use OCR if audio transcription is poor
+        if len(voice_transcript) <= 1 or all(seg.get("confidence", 0) < -0.5 for seg in voice_transcript):
+            print("⚠️  Audio transcription seems poor, adding OCR text...")
+            frame_text = self.extract_text_from_frames(frames)
+            transcript.extend(frame_text)
         
         matched = self.match_frames_with_transcript(frames, transcript)
         self.save_results(video_name, frames, transcript, matched)

@@ -1,0 +1,178 @@
+[
+  {
+    "frame": {
+      "frame_number": 0,
+      "timestamp": 0.0,
+      "filename": "video1_frame_000000_0.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000000_0.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 0.0,
+      "end_time": 1.0,
+      "text": "Bu eae cosom\n:",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 1,
+      "timestamp": 1.0,
+      "filename": "video1_frame_000001_1.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000001_1.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 0.0,
+      "end_time": 1.0,
+      "text": "Bu eae cosom\n:",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 2,
+      "timestamp": 2.0,
+      "filename": "video1_frame_000002_2.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000002_2.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 1.0,
+      "end_time": 2.0,
+      "text": "Purchase Price: $259,259\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 3,
+      "timestamp": 3.0,
+      "filename": "video1_frame_000003_3.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000003_3.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 2.0,
+      "end_time": 3.0,
+      "text": "Purchase Price: $350,000\nDown Payment: $3,241\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 4,
+      "timestamp": 4.0,
+      "filename": "video1_frame_000004_4.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000004_4.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 3.0,
+      "end_time": 4.0,
+      "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 5,
+      "timestamp": 5.0,
+      "filename": "video1_frame_000005_5.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000005_5.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 4.0,
+      "end_time": 5.0,
+      "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nSee what you could qualify for\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 6,
+      "timestamp": 6.0,
+      "filename": "video1_frame_000006_6.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000006_6.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 5.0,
+      "end_time": 6.0,
+      "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down. =\n\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender bes ME",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 7,
+      "timestamp": 7.0,
+      "filename": "video1_frame_000007_7.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000007_7.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 6.0,
+      "end_time": 7.0,
+      "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender\nEAL!",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 8,
+      "timestamp": 8.0,
+      "filename": "video1_frame_000008_8.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000008_8.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 7.0,
+      "end_time": 8.0,
+      "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender\nIA A",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 9,
+      "timestamp": 9.0,
+      "filename": "video1_frame_000009_9.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000009_9.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 8.0,
+      "end_time": 9.0,
+      "text": "Purchase Price: $350,000\nDown Payment: $3,500\nBuy a home\nwith as little as\n1% down.\nR CKET Mortgage\nNMLS #3030 | Equal Housing Lender\n\nAIP iA\n\n\u2018 |=\nay | gen \u201ca \u2018of",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 10,
+      "timestamp": 10.0,
+      "filename": "video1_frame_000010_10.00s.jpg",
+      "filepath": "output/frames/video1/video1_frame_000010_10.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 9.0,
+      "end_time": 10.0,
+      "text": "Purchase Price: $350,000\n\nDown Payment: $3,500\n\nBuy a home\n\nwith as little as\n\n1% down.\n\nR CKET Mortgage\n\nNMLS #3030 | Equal Housing Lender\nMn",
+      "confidence": 0.8,
+      "source": "ocr"
+    },
+    "match_confidence": 1.0
+  }
+]

@@ -1,0 +1,274 @@
+[
+  {
+    "frame": {
+      "frame_number": 0,
+      "timestamp": 0.0,
+      "filename": "video2_frame_000000_0.00s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000000_0.00s.jpg"
+    },
+    "transcript": {
+      "start_time": 0.0,
+      "end_time": 2.5199999809265137,
+      "text": " Imagine finding out your home's worth in seconds.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 1,
+      "timestamp": 0.9676333333333333,
+      "filename": "video2_frame_000001_0.97s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000001_0.97s.jpg"
+    },
+    "transcript": {
+      "start_time": 0.0,
+      "end_time": 2.5199999809265137,
+      "text": " Imagine finding out your home's worth in seconds.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 2,
+      "timestamp": 1.9352666666666667,
+      "filename": "video2_frame_000002_1.94s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000002_1.94s.jpg"
+    },
+    "transcript": {
+      "start_time": 0.0,
+      "end_time": 2.5199999809265137,
+      "text": " Imagine finding out your home's worth in seconds.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 3,
+      "timestamp": 2.9029000000000003,
+      "filename": "video2_frame_000003_2.90s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000003_2.90s.jpg"
+    },
+    "transcript": {
+      "start_time": 2.5199999809265137,
+      "end_time": 5.119999885559082,
+      "text": " That's what this new valuation tool from Rocket Mortgage",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 4,
+      "timestamp": 3.8705333333333334,
+      "filename": "video2_frame_000004_3.87s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000004_3.87s.jpg"
+    },
+    "transcript": {
+      "start_time": 2.5199999809265137,
+      "end_time": 5.119999885559082,
+      "text": " That's what this new valuation tool from Rocket Mortgage",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 5,
+      "timestamp": 4.838166666666667,
+      "filename": "video2_frame_000005_4.84s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000005_4.84s.jpg"
+    },
+    "transcript": {
+      "start_time": 2.5199999809265137,
+      "end_time": 5.119999885559082,
+      "text": " That's what this new valuation tool from Rocket Mortgage",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 6,
+      "timestamp": 5.8058000000000005,
+      "filename": "video2_frame_000006_5.81s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000006_5.81s.jpg"
+    },
+    "transcript": {
+      "start_time": 5.119999885559082,
+      "end_time": 5.920000076293945,
+      "text": " does for you.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 7,
+      "timestamp": 6.773433333333333,
+      "filename": "video2_frame_000007_6.77s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000007_6.77s.jpg"
+    },
+    "transcript": {
+      "start_time": 5.920000076293945,
+      "end_time": 7.599999904632568,
+      "text": " It's quick, and the best part?",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 8,
+      "timestamp": 7.741066666666667,
+      "filename": "video2_frame_000008_7.74s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000008_7.74s.jpg"
+    },
+    "transcript": {
+      "start_time": 7.599999904632568,
+      "end_time": 9.520000457763672,
+      "text": " Your mortgage rate stays the same.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 9,
+      "timestamp": 8.7087,
+      "filename": "video2_frame_000009_8.71s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000009_8.71s.jpg"
+    },
+    "transcript": {
+      "start_time": 7.599999904632568,
+      "end_time": 9.520000457763672,
+      "text": " Your mortgage rate stays the same.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 10,
+      "timestamp": 9.676333333333334,
+      "filename": "video2_frame_000010_9.68s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000010_9.68s.jpg"
+    },
+    "transcript": {
+      "start_time": 9.520000457763672,
+      "end_time": 12.84000015258789,
+      "text": " See your home's value now and start exploring options.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 11,
+      "timestamp": 10.643966666666667,
+      "filename": "video2_frame_000011_10.64s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000011_10.64s.jpg"
+    },
+    "transcript": {
+      "start_time": 9.520000457763672,
+      "end_time": 12.84000015258789,
+      "text": " See your home's value now and start exploring options.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 12,
+      "timestamp": 11.611600000000001,
+      "filename": "video2_frame_000012_11.61s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000012_11.61s.jpg"
+    },
+    "transcript": {
+      "start_time": 9.520000457763672,
+      "end_time": 12.84000015258789,
+      "text": " See your home's value now and start exploring options.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 13,
+      "timestamp": 12.579233333333333,
+      "filename": "video2_frame_000013_12.58s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000013_12.58s.jpg"
+    },
+    "transcript": {
+      "start_time": 9.520000457763672,
+      "end_time": 12.84000015258789,
+      "text": " See your home's value now and start exploring options.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 14,
+      "timestamp": 13.546866666666666,
+      "filename": "video2_frame_000014_13.55s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000014_13.55s.jpg"
+    },
+    "transcript": {
+      "start_time": 12.84000015258789,
+      "end_time": 15.920000076293945,
+      "text": " Tap below to start for free.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 15,
+      "timestamp": 14.5145,
+      "filename": "video2_frame_000015_14.51s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000015_14.51s.jpg"
+    },
+    "transcript": {
+      "start_time": 12.84000015258789,
+      "end_time": 15.920000076293945,
+      "text": " Tap below to start for free.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  },
+  {
+    "frame": {
+      "frame_number": 16,
+      "timestamp": 15.482133333333334,
+      "filename": "video2_frame_000016_15.48s.jpg",
+      "filepath": "output/frames/video2/video2_frame_000016_15.48s.jpg"
+    },
+    "transcript": {
+      "start_time": 12.84000015258789,
+      "end_time": 15.920000076293945,
+      "text": " Tap below to start for free.",
+      "confidence": -0.2364930808544159,
+      "source": "voice"
+    },
+    "match_confidence": 1.0
+  }
+]
